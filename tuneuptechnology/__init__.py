@@ -1,7 +1,7 @@
-"""The Tuneup Technology App Python Client Library"""
+"""Import all files for the client library"""
 from tuneuptechnology.client import Client
 from tuneuptechnology.util import Util
-from tuneuptechnology.customer import Customers
+from tuneuptechnology.customer import Customer
 from tuneuptechnology.inventory import Inventory
-from tuneuptechnology.location import Locations
-from tuneuptechnology.ticket import Tickets
+from tuneuptechnology.location import Location
+from tuneuptechnology.ticket import Ticket
