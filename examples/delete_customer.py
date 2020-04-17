@@ -8,7 +8,7 @@ API_EMAIL = os.getenv('API_EMAIL')
 API_KEY = os.getenv('API_KEY')
 
 # Retrieve a single customer record
-CUSTOMER = tuneuptechnology.Customers.delete_customer(
+CUSTOMER = tuneuptechnology.Customer.delete(
     data={
         'auth': API_EMAIL,
         'api_key': API_KEY,

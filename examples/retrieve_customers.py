@@ -7,7 +7,7 @@ load_dotenv()
 API_EMAIL = os.getenv('API_EMAIL')
 API_KEY = os.getenv('API_KEY')
 
-CUSTOMERS = tuneuptechnology.Customers.retrieve_customers(
+CUSTOMERS = tuneuptechnology.Customer.all(
     data={
         'auth': API_EMAIL,
         'api_key': API_KEY,

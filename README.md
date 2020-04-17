@@ -5,7 +5,7 @@ The Python client library for the Tuneup Technology App.
 [![Build Status](https://travis-ci.com/ncr4/tuneuptechnology-python.svg?branch=master)](https://travis-ci.com/ncr4/tuneuptechnology-python)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-This library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `create_customer` and pass some data and let the library do the rest.
+This library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer.create` and pass some data and let the library do the rest.
 
 ## Install
 
@@ -25,7 +25,7 @@ load_dotenv()
 API_EMAIL = os.getenv('API_EMAIL')
 API_KEY = os.getenv('API_KEY')
 
-CUSTOMER = tuneuptechnology.Customers.create_customer(
+CUSTOMER = tuneuptechnology.Customer.create(
 	data={
 		'auth': API_EMAIL,
 		'api_key': API_KEY,
