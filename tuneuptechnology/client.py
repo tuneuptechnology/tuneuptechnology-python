@@ -3,7 +3,7 @@ import requests
 
 class Client():
     """The client class builds the API request and is used throughout the library"""
-    VERSION = '1.0.0'
+    VERSION = '2.0.0'
     API_BASE_URL = "https://app.tuneuptechnology.com/api/"
 
     @classmethod
