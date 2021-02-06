@@ -9,7 +9,7 @@ REQUIRES = [
 
 setuptools.setup(
     name='tuneuptechnology',
-    version='2.0.0',
+    version='2.1.0',
     description='The Python client library for the Tuneup Technology App.',
     long_description=long_description,
     long_description_content_type="text/markdown",

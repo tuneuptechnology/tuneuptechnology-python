@@ -1,13 +1,19 @@
 import requests
 
+VERSION = '2.1.0'
+API_BASE_URL = "https://app.tuneuptechnology.com/api/"
+
 
 class Client():
-    """The client class builds the API request and is used throughout the library"""
-    VERSION = '2.0.0'
-    API_BASE_URL = "https://app.tuneuptechnology.com/api/"
-
-    @classmethod
-    def response(cls, data, endpoint):
+    @staticmethod
+    def response(data, endpoint):
         """Build the API request and return it to the method invoking it"""
-        request = requests.post(endpoint, data=data)
+        headers = {
+            'User-Agent': f'TuneupTechnologyApp/PythonClient/{VERSION}'
+        }
+        request = requests.post(
+            endpoint,
+            data=data,
+            headers=headers,
+        )
         return request
