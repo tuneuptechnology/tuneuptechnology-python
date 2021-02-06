@@ -1,5 +1,5 @@
-"""Helper utilities for the client library"""
 import json
+
 
 class Util():
     """All utilities are found here"""

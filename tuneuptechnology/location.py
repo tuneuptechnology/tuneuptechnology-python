@@ -1,5 +1,5 @@
-"""All Location methods are housed here"""
 from tuneuptechnology.client import Client
+
 
 class Location(Client):
     """Location methods"""

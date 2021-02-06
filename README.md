@@ -2,8 +2,8 @@
 
 The Python client library for the Tuneup Technology App.
 
-[![Build Status](https://travis-ci.com/ncr4/tuneuptechnology-python.svg?branch=master)](https://travis-ci.com/ncr4/tuneuptechnology-python)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Build Status](https://github.com/tuneuptechnology/tuneuptechnology-python/workflows/build/badge.svg)](https://github.com/tuneuptechnology/tuneuptechnology-python/actions)
+[![Licence](https://img.shields.io/github/license/tuneuptechnology/tuneuptechnology-python)](LICENSE)
 
 This library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer.create` and pass some data and let the library do the rest.
 
@@ -16,30 +16,28 @@ pip3 install tuneuptechnology
 ## Example
 
 ```python
-"""Create a customer record by passing in all required data"""
 import os
-from dotenv import load_dotenv
+
 import tuneuptechnology
 
-load_dotenv()
 API_EMAIL = os.getenv('API_EMAIL')
 API_KEY = os.getenv('API_KEY')
 
-CUSTOMER = tuneuptechnology.Customer.create(
-	data={
-		'auth': API_EMAIL,
-		'api_key': API_KEY,
-		'firstname': 'Jake',
-		'lastname': 'Peralta',
-		'email': 'jake@example.com',
-		'phone': '8015551234',
-		'user_id': 1,
-		'notes': 'Believes he is a good detective.',
-		'location_id': 1,
-	}
+customer = tuneuptechnology.Customer.create(
+    data={
+        'auth': API_EMAIL,
+        'api_key': API_KEY,
+        'firstname': 'Jake',
+        'lastname': 'Peralta',
+        'email': 'jake@example.com',
+        'phone': '8015551234',
+        'user_id': 1,
+        'notes': 'Believes he is a good detective.',
+        'location_id': 1,
+    }
 )
 
-tuneuptechnology.Util.pretty_print(CUSTOMER)
+tuneuptechnology.Util.pretty_print(customer)
 ```
 
 Other examples can be found in the `/examples` directory. Alter according to your needs.

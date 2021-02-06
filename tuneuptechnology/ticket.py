@@ -1,5 +1,5 @@
-"""All Ticket methods are housed here"""
 from tuneuptechnology.client import Client
+
 
 class Ticket(Client):
     """Ticket methods"""

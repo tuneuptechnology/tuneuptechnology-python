@@ -1,5 +1,5 @@
-"""All Inventory methods are housed here"""
 from tuneuptechnology.client import Client
+
 
 class Inventory(Client):
     """Inventory methods"""

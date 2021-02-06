@@ -1,5 +1,5 @@
-"""All Customer methods are housed here"""
 from tuneuptechnology.client import Client
+
 
 class Customer(Client):
     """Customer methods"""

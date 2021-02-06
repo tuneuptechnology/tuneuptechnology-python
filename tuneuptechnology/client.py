@@ -1,5 +1,5 @@
-"""This file builds the API request and houses shared constants"""
 import requests
+
 
 class Client():
     """The client class builds the API request and is used throughout the library"""
