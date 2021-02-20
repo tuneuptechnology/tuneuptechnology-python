@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.2.0 (2021-02-20)
+
+* Adds timeout on HTTP requests 
+* Adds try/except block arround HTTP requests
+* Changes internal function name from `response` to `_make_http_request`
+
 ## v2.1.0 (2021-02-05)
 
 * Changed all classmethods to staticmethods
