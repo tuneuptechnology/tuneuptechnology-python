@@ -5,12 +5,12 @@ import pytest
 
 @pytest.fixture
 def api_email():
-    return os.getenv('API_EMAIL')
+    return os.getenv('API_EMAIL') or 'mock-email'
 
 
 @pytest.fixture
 def api_key():
-    return os.getenv('API_KEY')
+    return os.getenv('API_KEY') or 'mock-key'
 
 
 @pytest.fixture
