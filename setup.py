@@ -26,7 +26,12 @@ setuptools.setup(
     install_requires=REQUIRES,
     extras_require={
         'dev': [
+            'pytest >= 6.0.0',
+            'pytest-cov >= 2.10.0',
+            'coveralls >= 2.1.2',
             'flake8 >= 3.8.0',
+            'mock >= 4.0.0',
+            'vcrpy >= 4.1.0',
         ]
     },
     python_requires='>=3.6',

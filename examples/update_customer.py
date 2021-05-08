@@ -5,19 +5,19 @@ import tuneuptechnology
 API_EMAIL = os.getenv('API_EMAIL')
 API_KEY = os.getenv('API_KEY')
 
-customer = tuneuptechnology.Customer.update(
+client = tuneuptechnology.Client(API_EMAIL, API_KEY)
+
+customer = client.Customers.update(
+    id=23,
     data={
-        'auth': API_EMAIL,
-        'api_key': API_KEY,
-        'id': 23,  # the ID of the customer you are updating
         'firstname': 'Jake',
         'lastname': 'Peralta',
         'email': 'jake@example.com',
         'phone': '8015551234',
         'user_id': 1,
         'notes': 'Believes he is a good detective.',
-        'location_id': 1,
+        'location_id': 2,
     }
 )
 
-tuneuptechnology.Util.pretty_print(customer)
+print(customer.json())

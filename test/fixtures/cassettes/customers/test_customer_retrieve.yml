@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/2.1.0
+    method: GET
+    uri: http://tuneapp.localhost/api/customers/1
+  response:
+    body:
+      string: '{"data":{"id":1,"firstname":"Ms. Hattie McGlynn","lastname":"Ralph
+        Prohaska","email":"adolfo09@example.com","phone":"8018981234","user_id":1,"notes":"Velit
+        consequatur et cum omnis est.","created_at":"2021-05-08 06:12:04","updated_at":"2021-05-08
+        06:12:04","deleted_at":null,"location_id":1},"message":"Customer retrieved
+        successfully."}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Length:
+      - '337'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 06:12:29 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+    status:
+      code: 200
+      message: OK
+version: 1

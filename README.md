@@ -3,6 +3,8 @@
 The Python client library for the Tuneup Technology App.
 
 [![Build Status](https://github.com/tuneuptechnology/tuneuptechnology-python/workflows/build/badge.svg)](https://github.com/tuneuptechnology/tuneuptechnology-python/actions)
+[![Coverage Status](https://coveralls.io/repos/github/tuneuptechnology/tuneuptechnology-python/badge.svg?branch=main)](https://coveralls.io/github/tuneuptechnology/tuneuptechnology-python?branch=main)
+[![PyPi](https://img.shields.io/pypi/v/tuneuptechnology-python)](https://pypi.org/project/tuneuptechnology-python)
 [![Licence](https://img.shields.io/github/license/tuneuptechnology/tuneuptechnology-python)](LICENSE)
 
 This library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer.create` and pass some data and let the library do the rest.
@@ -10,7 +12,14 @@ This library allows you to interact with the customers, tickets, inventory, and 
 ## Install
 
 ```bash
+# Install client library
 pip3 install tuneuptechnology
+
+# Install locally
+make install
+
+# Get Makefile help
+make help
 ```
 
 ## Example
@@ -23,21 +32,21 @@ import tuneuptechnology
 API_EMAIL = os.getenv('API_EMAIL')
 API_KEY = os.getenv('API_KEY')
 
-customer = tuneuptechnology.Customer.create(
-    data={
-        'auth': API_EMAIL,
-        'api_key': API_KEY,
+client = tuneuptechnology.Client(API_EMAIL, API_KEY)
+
+customer = client.Customers.create(
+    {
         'firstname': 'Jake',
         'lastname': 'Peralta',
         'email': 'jake@example.com',
         'phone': '8015551234',
         'user_id': 1,
         'notes': 'Believes he is a good detective.',
-        'location_id': 1,
+        'location_id': 2,
     }
 )
 
-tuneuptechnology.Util.pretty_print(customer)
+print(customer.json())
 ```
 
 Other examples can be found in the `/examples` directory. Alter according to your needs.
@@ -45,12 +54,25 @@ Other examples can be found in the `/examples` directory. Alter according to you
 ## Usage
 
 ```bash
-API_EMAIL=email@example.com API_KEY=123... python3 create_customer.py
+API_EMAIL=email@example.com API_KEY=123... venv/bin/python create_customer.py
 ```
 
 ## Documentation
 
 Up-to-date API documentation can be [found here](https://app.tuneuptechnology.com/docs/api).
+
+## Development
+
+```bash
+# Lint the project
+make lint
+
+# Run tests
+API_EMAIL=email@example.com API_KEY=123... make test
+
+# Run test coverage
+API_EMAIL=email@example.com API_KEY=123... make coverage
+```
 
 ## Releasing
 

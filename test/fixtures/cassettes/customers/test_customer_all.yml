@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/2.1.0
+    method: GET
+    uri: http://tuneapp.localhost/api/customers
+  response:
+    body:
+      string: '{"data":{"current_page":1,"data":[{"id":1,"firstname":"Ms. Hattie McGlynn","lastname":"Ralph
+        Prohaska","email":"adolfo09@example.com","phone":"8018981234","user_id":1,"notes":"Velit
+        consequatur et cum omnis est.","created_at":"2021-05-08 06:12:04","updated_at":"2021-05-08
+        06:12:04","deleted_at":null,"location_id":1},{"id":2,"firstname":"Chasity
+        Cruickshank","lastname":"Devante Lehner","email":"evelyn.oberbrunner@example.com","phone":"8018981234","user_id":1,"notes":"Eum
+        corrupti veritatis deleniti nihil fuga.","created_at":"2021-05-08 06:12:04","updated_at":"2021-05-08
+        06:12:04","deleted_at":null,"location_id":1},{"id":3,"firstname":"Ryan Cronin","lastname":"Dr.
+        Felicia Kozey PhD","email":"tprohaska@example.org","phone":"8018981234","user_id":1,"notes":"Veniam
+        alias mollitia impedit deserunt impedit.","created_at":"2021-05-08 06:12:04","updated_at":"2021-05-08
+        06:12:04","deleted_at":null,"location_id":1},{"id":4,"firstname":"Lavinia
+        Monahan","lastname":"Tamia Nolan Jr.","email":"norwood.schumm@example.org","phone":"8018981234","user_id":1,"notes":"Aliquid
+        quis est dolorem et.","created_at":"2021-05-08 06:12:04","updated_at":"2021-05-08
+        06:12:04","deleted_at":null,"location_id":1},{"id":5,"firstname":"Rosina Fahey","lastname":"Prof.
+        Dayne Witting I","email":"klittle@example.org","phone":"8018981234","user_id":1,"notes":"Incidunt
+        dolor vero quas iure sit consequatur consequuntur numquam.","created_at":"2021-05-08
+        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"location_id":1},{"id":6,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes
+        he is a good detective.","created_at":"2021-05-08 06:12:29","updated_at":"2021-05-08
+        06:12:29","deleted_at":null,"location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Customers
+        retrieved successfully."}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 May 2021 06:12:29 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+    status:
+      code: 200
+      message: OK
+version: 1
