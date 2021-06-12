@@ -46,7 +46,7 @@ customer = client.Customers.create(
     }
 )
 
-print(customer.json())
+print(customer)
 ```
 
 Other examples can be found in the `/examples` directory. Alter according to your needs.

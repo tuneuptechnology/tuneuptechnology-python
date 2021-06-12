@@ -17,4 +17,4 @@ customer = client.Customers.update(
     }
 )
 
-print(customer.json())
+print(customer)

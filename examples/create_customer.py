@@ -16,4 +16,4 @@ customer = client.Customers.create(
     }
 )
 
-print(customer.json())
+print(customer)
