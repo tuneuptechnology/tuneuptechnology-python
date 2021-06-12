@@ -9,25 +9,23 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - TuneupTechnologyApp/PythonClient/2.1.0
+      - TuneupTechnologyApp/PythonClient/3.0.0
     method: GET
     uri: http://tuneapp.localhost/api/customers/1
   response:
     body:
-      string: '{"data":{"id":1,"firstname":"Ms. Hattie McGlynn","lastname":"Ralph
-        Prohaska","email":"adolfo09@example.com","phone":"8018981234","user_id":1,"notes":"Velit
-        consequatur et cum omnis est.","created_at":"2021-05-08 06:12:04","updated_at":"2021-05-08
-        06:12:04","deleted_at":null,"location_id":1},"message":"Customer retrieved
-        successfully."}'
+      string: '{"id":1,"firstname":"Ernestina Will DDS","lastname":"Howell Hansen","email":"obarton@example.org","phone":"8018981234","user_id":1,"notes":"Sunt
+        eius sunt adipisci in aperiam facere.","created_at":"2021-06-12 00:22:43","updated_at":"2021-06-12
+        00:22:43","deleted_at":null,"location_id":1}'
     headers:
       Cache-Control:
       - no-cache, private
       Content-Length:
-      - '337'
+      - '288'
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 06:12:29 GMT
+      - Sat, 12 Jun 2021 00:32:58 GMT
       Server:
       - nginx
       X-Powered-By:

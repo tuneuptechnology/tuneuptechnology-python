@@ -9,35 +9,34 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - TuneupTechnologyApp/PythonClient/2.1.0
+      - TuneupTechnologyApp/PythonClient/3.0.0
     method: GET
     uri: http://tuneapp.localhost/api/inventory
   response:
     body:
-      string: '{"data":{"current_page":1,"data":[{"id":1,"name":"itaque","quantity":"3","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"inventory_type_id":1,"part_number":"33995","sku":"800842","notes":"Vel
-        libero libero ut molestiae quidem quos.","part_price":null,"location_id":1},{"id":2,"name":"fugiat","quantity":"7","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"inventory_type_id":1,"part_number":"526066","sku":"582593","notes":"Quod
-        officiis et debitis molestias vitae labore itaque.","part_price":null,"location_id":1},{"id":3,"name":"sit","quantity":"4","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"inventory_type_id":1,"part_number":"407169","sku":"65400","notes":"Aut
-        sint repellendus et id.","part_price":null,"location_id":1},{"id":4,"name":"sint","quantity":"9","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"inventory_type_id":1,"part_number":"423291","sku":"299468","notes":"Magnam
-        doloremque sit necessitatibus aliquam omnis officia ut.","part_price":null,"location_id":1},{"id":5,"name":"quis","quantity":"6","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"inventory_type_id":1,"part_number":"200009","sku":"934908","notes":"Temporibus
-        iure corporis suscipit nulla.","part_price":null,"location_id":1},{"id":6,"name":"Inventory
-        Item","quantity":"1","created_at":"2021-05-08 06:12:30","updated_at":"2021-05-08
-        06:12:30","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
-        are some notes","part_price":"19.99","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Inventory
-        retrieved successfully."}'
+      string: '{"current_page":1,"data":[{"id":1,"name":"earum","quantity":"7","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"262890","sku":"565644","notes":"Quidem
+        quis consequatur corporis non.","part_price":null,"location_id":1},{"id":2,"name":"ut","quantity":"7","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"100778","sku":"92134","notes":"Tempore
+        ratione enim modi corrupti explicabo dolorem corrupti.","part_price":null,"location_id":1},{"id":3,"name":"earum","quantity":"7","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"403419","sku":"152556","notes":"Nihil
+        voluptatem at in voluptas repudiandae.","part_price":null,"location_id":1},{"id":4,"name":"dolor","quantity":"6","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"632392","sku":"767859","notes":"Perspiciatis
+        id quam ratione earum vel.","part_price":null,"location_id":1},{"id":5,"name":"dolorum","quantity":"8","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"644282","sku":"422626","notes":"Dolorem
+        fugiat quia ut tenetur quia in et doloremque.","part_price":null,"location_id":1},{"id":6,"name":"Inventory
+        Item","quantity":"1","created_at":"2021-06-12 00:32:58","updated_at":"2021-06-12
+        00:32:58","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
+        are some notes","part_price":"19.99","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6}'
     headers:
       Cache-Control:
       - no-cache, private
       Content-Length:
-      - '2009'
+      - '1964'
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 06:12:30 GMT
+      - Sat, 12 Jun 2021 00:32:58 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -45,7 +44,7 @@ interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '53'
+      - '54'
     status:
       code: 200
       message: OK

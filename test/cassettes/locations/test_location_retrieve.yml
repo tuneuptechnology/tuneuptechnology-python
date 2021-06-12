@@ -9,24 +9,22 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - TuneupTechnologyApp/PythonClient/2.1.0
+      - TuneupTechnologyApp/PythonClient/3.0.0
     method: GET
     uri: http://tuneapp.localhost/api/locations/1
   response:
     body:
-      string: '{"data":{"id":1,"name":"Hartmann, Stroman and Wintheiser","street":"83985
-        Hammes Lane Apt. 224","city":"Erdmanville","state":"WY","zip":"59650","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null},"message":"Location
-        retrieved successfully."}'
+      string: '{"id":1,"name":"Zemlak PLC","street":"37813 Beier Oval Apt. 392","city":"Jovanyberg","state":"KY","zip":"4642","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null}'
     headers:
       Cache-Control:
       - no-cache, private
       Content-Length:
-      - '278'
+      - '199'
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 06:26:07 GMT
+      - Sat, 12 Jun 2021 00:33:51 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -34,7 +32,7 @@ interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '57'
+      - '48'
     status:
       code: 200
       message: OK

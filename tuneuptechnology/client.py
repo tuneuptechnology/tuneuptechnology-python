@@ -53,4 +53,4 @@ class Client():
         except Exception as error:
             raise Exception(error)
 
-        return request
+        return request.json()

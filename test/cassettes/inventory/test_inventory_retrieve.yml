@@ -9,24 +9,23 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - TuneupTechnologyApp/PythonClient/2.1.0
+      - TuneupTechnologyApp/PythonClient/3.0.0
     method: GET
     uri: http://tuneapp.localhost/api/inventory/1
   response:
     body:
-      string: '{"data":{"id":1,"name":"itaque","quantity":"3","created_at":"2021-05-08
-        06:12:04","updated_at":"2021-05-08 06:12:04","deleted_at":null,"inventory_type_id":1,"part_number":"33995","sku":"800842","notes":"Vel
-        libero libero ut molestiae quidem quos.","part_price":null,"location_id":1},"message":"Inventory
-        item retrieved successfully."}'
+      string: '{"id":1,"name":"earum","quantity":"7","created_at":"2021-06-12 00:22:43","updated_at":"2021-06-12
+        00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"262890","sku":"565644","notes":"Quidem
+        quis consequatur corporis non.","part_price":null,"location_id":1}'
     headers:
       Cache-Control:
       - no-cache, private
       Content-Length:
-      - '334'
+      - '268'
       Content-Type:
       - application/json
       Date:
-      - Sat, 08 May 2021 06:12:30 GMT
+      - Sat, 12 Jun 2021 00:32:58 GMT
       Server:
       - nginx
       X-Powered-By:
@@ -34,7 +33,7 @@ interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '52'
+      - '53'
     status:
       code: 200
       message: OK
