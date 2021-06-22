@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v3.0.0 (2021-06-21)
+
+* Updates entire library to be compliant with the new `v2` API (endpoints, HTTP methods, etc)
+* Build requests via a `Client` now providing your email and api_key
+* Added optional `base_url` and `timeout` options to client
+* Module names are now plural
+* The Client now checks if an email and api_key is provided and raises an error if not
+* Removed `utils` module (pretty print)
+* Added unit tests (closes #1)
+
 ## v2.2.0 (2021-02-20)
 
 * Adds timeout on HTTP requests 

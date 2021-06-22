@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/3.0.0
+    method: GET
+    uri: http://tuneapp.localhost/api/inventory/1
+  response:
+    body:
+      string: '{"id":1,"name":"earum","quantity":"7","created_at":"2021-06-12 00:22:43","updated_at":"2021-06-12
+        00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"262890","sku":"565644","notes":"Quidem
+        quis consequatur corporis non.","part_price":null,"location_id":1}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Length:
+      - '268'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:32:58 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '53'
+    status:
+      code: 200
+      message: OK
+version: 1

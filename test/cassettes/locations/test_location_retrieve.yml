@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/3.0.0
+    method: GET
+    uri: http://tuneapp.localhost/api/locations/1
+  response:
+    body:
+      string: '{"id":1,"name":"Zemlak PLC","street":"37813 Beier Oval Apt. 392","city":"Jovanyberg","state":"KY","zip":"4642","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Length:
+      - '199'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:33:51 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '48'
+    status:
+      code: 200
+      message: OK
+version: 1

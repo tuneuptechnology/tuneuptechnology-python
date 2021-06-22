@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/3.0.0
+    method: GET
+    uri: http://tuneapp.localhost/api/locations
+  response:
+    body:
+      string: '{"current_page":1,"data":[{"id":1,"name":"Zemlak PLC","street":"37813
+        Beier Oval Apt. 392","city":"Jovanyberg","state":"KY","zip":"4642","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null},{"id":2,"name":"Cormier-Steuber","street":"60186
+        Leann Meadow","city":"Lake Jackelineton","state":"LA","zip":"79844","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null},{"id":3,"name":"Lebsack
+        Inc","street":"881 Effertz Squares Apt. 622","city":"Port Joanie","state":"UT","zip":"40890","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null},{"id":4,"name":"Ziemann-O''Reilly","street":"172
+        Moen Ridges Suite 988","city":"Beerstad","state":"KS","zip":"14832","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null},{"id":5,"name":"Bruen,
+        Kunde and Christiansen","street":"70144 Yundt Estates Suite 758","city":"Tyreekmouth","state":"TX","zip":"72610","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null},{"id":6,"name":"Location
+        Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-06-12
+        00:32:59","updated_at":"2021-06-12 00:32:59","deleted_at":null},{"id":7,"name":"Location
+        Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-06-12
+        00:33:51","updated_at":"2021-06-12 00:33:51","deleted_at":null}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/locations","per_page":20,"prev_page_url":null,"to":7,"total":7}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Length:
+      - '1746'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:33:51 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '49'
+    status:
+      code: 200
+      message: OK
+version: 1

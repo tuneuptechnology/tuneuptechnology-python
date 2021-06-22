@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: '{"customer_id": 2, "ticket_type_id": 1, "serial": "10000", "user_id": 1,
+      "notes": "here are some notes", "title": "Fancy Title", "status": 1, "device":
+      "iPhone", "imei": 10000, "location_id": 2}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '194'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/3.0.0
+    method: POST
+    uri: http://tuneapp.localhost/api/tickets
+  response:
+    body:
+      string: '{"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here
+        are some notes","title":"Fancy Title","status":1,"device":"iPhone","imei":10000,"location_id":2,"updated_at":"2021-06-12
+        00:33:52","created_at":"2021-06-12 00:33:52","id":6}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Length:
+      - '252'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:33:52 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '46'
+    status:
+      code: 200
+      message: OK
+version: 1

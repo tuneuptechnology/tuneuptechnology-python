@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - TuneupTechnologyApp/PythonClient/3.0.0
+    method: GET
+    uri: http://tuneapp.localhost/api/inventory
+  response:
+    body:
+      string: '{"current_page":1,"data":[{"id":1,"name":"earum","quantity":"7","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"262890","sku":"565644","notes":"Quidem
+        quis consequatur corporis non.","part_price":null,"location_id":1},{"id":2,"name":"ut","quantity":"7","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"100778","sku":"92134","notes":"Tempore
+        ratione enim modi corrupti explicabo dolorem corrupti.","part_price":null,"location_id":1},{"id":3,"name":"earum","quantity":"7","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"403419","sku":"152556","notes":"Nihil
+        voluptatem at in voluptas repudiandae.","part_price":null,"location_id":1},{"id":4,"name":"dolor","quantity":"6","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"632392","sku":"767859","notes":"Perspiciatis
+        id quam ratione earum vel.","part_price":null,"location_id":1},{"id":5,"name":"dolorum","quantity":"8","created_at":"2021-06-12
+        00:22:43","updated_at":"2021-06-12 00:22:43","deleted_at":null,"inventory_type_id":1,"part_number":"644282","sku":"422626","notes":"Dolorem
+        fugiat quia ut tenetur quia in et doloremque.","part_price":null,"location_id":1},{"id":6,"name":"Inventory
+        Item","quantity":"1","created_at":"2021-06-12 00:32:58","updated_at":"2021-06-12
+        00:32:58","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here
+        are some notes","part_price":"19.99","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6}'
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Length:
+      - '1964'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jun 2021 00:32:58 GMT
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/7.4.15
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '54'
+    status:
+      code: 200
+      message: OK
+version: 1
