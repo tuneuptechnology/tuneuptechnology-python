@@ -4,7 +4,7 @@ The Python client library for the Tuneup Technology App.
 
 [![Build Status](https://github.com/tuneuptechnology/tuneuptechnology-python/workflows/build/badge.svg)](https://github.com/tuneuptechnology/tuneuptechnology-python/actions)
 [![Coverage Status](https://coveralls.io/repos/github/tuneuptechnology/tuneuptechnology-python/badge.svg?branch=main)](https://coveralls.io/github/tuneuptechnology/tuneuptechnology-python?branch=main)
-[![PyPi](https://img.shields.io/pypi/v/tuneuptechnology-python)](https://pypi.org/project/tuneuptechnology-python)
+[![PyPi](https://img.shields.io/pypi/v/tuneuptechnology)](https://pypi.org/project/tuneuptechnology)
 [![Licence](https://img.shields.io/github/license/tuneuptechnology/tuneuptechnology-python)](LICENSE)
 
 This library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer.create` and pass some data and let the library do the rest.
