@@ -1,5 +1,7 @@
-import mock
+from unittest.mock import patch
+
 import pytest
+
 from tuneuptechnology.client import Client
 
 
@@ -10,7 +12,7 @@ def test_client_no_creds():
     assert 'Credentials are required to create a Client.' in str(error.value)
 
 
-@mock.patch('requests.request', side_effect=Exception)
+@patch('requests.request', side_effect=Exception)
 def test_client_request_exception(mock_request):
     with pytest.raises(Exception):
         Client('mock-value', 'mock-value').make_http_request('get', 'http://mockwebsite.local')

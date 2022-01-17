@@ -1,8 +1,15 @@
-import vcr
+import vcr  # type: ignore
+
 from tuneuptechnology.client import Client
 
+custom_vcr = vcr.VCR(
+    cassette_library_dir='test/cassettes/customers',
+    path_transformer=vcr.VCR.ensure_suffix('.yml'),
+    filter_headers=['Email', 'Api-Key'],
+)
 
-@vcr.use_cassette('test/cassettes/customers/test_customer_create.yml', filter_headers=['Email', 'Api-Key'])
+
+@custom_vcr.use_cassette()
 def test_customer_create(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Customers.create(
@@ -20,7 +27,7 @@ def test_customer_create(api_email, api_key, base_url):
     assert response['firstname'] == 'Jake'
 
 
-@vcr.use_cassette('test/cassettes/customers/test_customer_all.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_customer_all(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Customers.all()
@@ -28,7 +35,7 @@ def test_customer_all(api_email, api_key, base_url):
     assert len(response['data']) > 1
 
 
-@vcr.use_cassette('test/cassettes/customers/test_customer_retrieve.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_customer_retrieve(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Customers.retrieve(id=1)
@@ -36,7 +43,7 @@ def test_customer_retrieve(api_email, api_key, base_url):
     assert response['firstname']
 
 
-@vcr.use_cassette('test/cassettes/customers/test_customer_update.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_customer_update(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Customers.update(
@@ -49,13 +56,13 @@ def test_customer_update(api_email, api_key, base_url):
             'user_id': 1,
             'notes': 'Believes he is a good detective.',
             'location_id': 2,
-        }
+        },
     )
 
     assert response['firstname'] == 'Jake'
 
 
-@vcr.use_cassette('test/cassettes/customers/test_customer_delete.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_customer_delete(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Customers.delete(id=1)

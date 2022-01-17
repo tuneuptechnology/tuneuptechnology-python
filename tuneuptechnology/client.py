@@ -6,7 +6,7 @@ from tuneuptechnology.locations import Locations
 from tuneuptechnology.tickets import Tickets
 
 
-class Client():
+class Client:
     def __init__(self, email=None, api_key=None, base_url='https://app.tuneuptechnology.com/api', timeout=10):
         self.email = email
         self.api_key = api_key

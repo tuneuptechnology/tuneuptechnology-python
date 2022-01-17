@@ -8,11 +8,14 @@ REQUIREMENTS = [
 ]
 
 DEV_REQUIREMENTS = [
+    'black',
     'coveralls == 3.*',
     'flake8',
-    'mock == 4.*',
+    'isort',
+    'mypy',
     'pytest == 6.*',
-    'pytest-cov == 2.*',
+    'pytest-cov == 3.*',
+    'types-requests',
     'vcrpy == 4.*',
 ]
 
@@ -34,7 +37,7 @@ setuptools.setup(
     ],
     install_requires=REQUIREMENTS,
     extras_require={
-        'dev': DEV_REQUIREMENTS
+        'dev': DEV_REQUIREMENTS,
     },
-    python_requires='>=3.6',
+    python_requires='>=3.7',
 )

@@ -1,8 +1,15 @@
-import vcr
+import vcr  # type: ignore
+
 from tuneuptechnology.client import Client
 
+custom_vcr = vcr.VCR(
+    cassette_library_dir='test/cassettes/tickets',
+    path_transformer=vcr.VCR.ensure_suffix('.yml'),
+    filter_headers=['Email', 'Api-Key'],
+)
 
-@vcr.use_cassette('test/cassettes/tickets/test_ticket_create.yml', filter_headers=['Email', 'Api-Key'])
+
+@custom_vcr.use_cassette()
 def test_ticket_create(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Tickets.create(
@@ -16,14 +23,14 @@ def test_ticket_create(api_email, api_key, base_url):
             'status': 1,
             'device': 'iPhone',
             'imei': 10000,
-            'location_id': 2
+            'location_id': 2,
         }
     )
 
     assert response['title'] == 'Fancy Title'
 
 
-@vcr.use_cassette('test/cassettes/tickets/test_ticket_all.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_ticket_all(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Tickets.all()
@@ -31,7 +38,7 @@ def test_ticket_all(api_email, api_key, base_url):
     assert len(response['data']) > 1
 
 
-@vcr.use_cassette('test/cassettes/tickets/test_ticket_retrieve.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_ticket_retrieve(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Tickets.retrieve(id=1)
@@ -39,7 +46,7 @@ def test_ticket_retrieve(api_email, api_key, base_url):
     assert response['title']
 
 
-@vcr.use_cassette('test/cassettes/tickets/test_ticket_update.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_ticket_update(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Tickets.update(
@@ -54,14 +61,14 @@ def test_ticket_update(api_email, api_key, base_url):
             'status': 1,
             'device': 'iPhone',
             'imei': 10000,
-            'location_id': 2
-        }
+            'location_id': 2,
+        },
     )
 
     assert response['title'] == 'Fancy Title'
 
 
-@vcr.use_cassette('test/cassettes/tickets/test_ticket_delete.yml', filter_headers=['Email', 'Api-Key'])
+@custom_vcr.use_cassette()
 def test_ticket_delete(api_email, api_key, base_url):
     client = Client(api_email, api_key, base_url)
     response = client.Tickets.delete(id=1)

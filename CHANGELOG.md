@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## NEXT RELEASE
+
+* Bumped minimum version of Python to `3.7`
+* Added type hinting with `mypy` and `Black` formatting
+* Cleaned up unit tests with reusable VCR contexts
+* Bumped dependencies
+
 ## v3.0.0 (2021-06-21)
 
 * Updates entire library to be compliant with the new `v2` API (endpoints, HTTP methods, etc)

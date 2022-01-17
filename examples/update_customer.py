@@ -14,7 +14,7 @@ customer = client.Customers.update(
         'user_id': 1,
         'notes': 'Believes he is a good detective.',
         'location_id': 2,
-    }
+    },
 )
 
 print(customer)
