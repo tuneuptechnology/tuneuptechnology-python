@@ -13,7 +13,7 @@ DEV_REQUIREMENTS = [
     'flake8',
     'isort',
     'mypy',
-    'pytest == 6.*',
+    'pytest == 7.*',
     'pytest-cov == 3.*',
     'types-requests',
     'vcrpy == 4.*',
@@ -39,5 +39,5 @@ setuptools.setup(
     extras_require={
         'dev': DEV_REQUIREMENTS,
     },
-    python_requires='>=3.7',
+    python_requires='>=3.7, <4',
 )
