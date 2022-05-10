@@ -1,8 +1,7 @@
 __pycache__
-.DS_Store
-dist
-build
-*.egg-info
-venv
-htmlcov
 .coverage
+.DS_Store
+*.egg-info
+dist
+htmlcov
+venv

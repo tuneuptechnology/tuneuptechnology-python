@@ -8,13 +8,15 @@ REQUIREMENTS = [
 ]
 
 DEV_REQUIREMENTS = [
-    'black',
+    'black == 22.*',
+    'build == 0.7.*',
     'coveralls == 3.*',
-    'flake8',
-    'isort',
-    'mypy',
+    'flake8 == 4.*',
+    'isort == 5.*',
+    'mypy == 0.942',
     'pytest == 7.*',
     'pytest-cov == 3.*',
+    'twine == 4.*',
     'types-requests',
     'vcrpy == 4.*',
 ]
@@ -29,7 +31,12 @@ setuptools.setup(
     author='Tuneup Technology',
     author_email='tuneuptechnology@gmail.com',
     license='MIT',
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(
+        exclude=[
+            'examples',
+            'test',
+        ]
+    ),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
